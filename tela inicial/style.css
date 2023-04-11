@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+/* Sessão da esquerda */
+
+.section-left {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: #003180;
+  border-radius: 0px 10px 10px 0px;
+}
+.login > h3 {
+  color: #4b88a2;
+  font-size: 25px;
+}
+
+.login > h2 {
+  color: #fff;
+  font-size: 30px;
+}
+.width {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.paragraph,
+p {
+  margin-top: 20px;
+  width: 260px;
+  color: #fff;
+  font-size: 16px;
+}
+
+/* Sessão da direita */
+.section-right {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.infos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+a {
+  width: 70%;
+  text-decoration: none;
+}
+.button-option {
+  display: flex;
+  align-items: center;
+  /* flex-shrink: 1; */
+  min-width: 100%;
+  border-radius: 10px;
+  margin: 15px 0px 15px 0px;
+  font-size: 28px;
+  font-weight: bold;
+  border: none;
+  border: 1px solid #cccccc;
+  cursor: pointer;
+  color: #252627;
+}
+.button-option:hover {
+  background-color: #cccccc;
+}
+.img-aluno {
+  width: 100px;
+  padding: 10px;
+  margin-left: 30px;
+  margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+  .section-right h3 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 650px) {
+  .section-right p {
+    width: 250px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 565px) {
+  .passwd_login {
+    width: 200px;
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    flex-direction: column;
+  }
+  .welcome {
+    display: block;
+  }
+  img {
+    width: 120px;
+  }
+  .section-right {
+    border-radius: 12px 12px 0px 0px;
+    margin-top: 14px;
+    height: 50%;
+  }
+
+  .section-right h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 4vh;
+    margin-bottom: 10px;
+    display: none;
+    color: black;
+  }
+  .section-right p {
+    margin-top: 5vh;
+    font-size: 19px;
+    width: 270px;
+  }
+  .passwd_login {
+    width: 270px;
+  }
+  .section-right a {
+    border-bottom: 2px solid black;
+  }
+}
+@media (max-width: 300px) {
+  .section-right a {
+    width: 270px;
+  }
+}

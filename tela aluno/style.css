@@ -1,0 +1,114 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  color-scheme: light dark;
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.content {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #003180;
+  color: #fff;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.text {
+  max-width: 50%;
+}
+
+.text h1 {
+  margin-bottom: 1rem;
+}
+
+.forms {
+  height: 100vh;
+  width: 50%;
+  color: #252627;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.forms form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.forms h1 {
+  margin-bottom: 1.2rem;
+}
+
+label {
+  color: #252627;
+  font-weight: 500;
+  font-size: 14pt;
+}
+
+input {
+  background-color: #f2f2f2;
+  height: 2.5rem;
+  width: 20rem;
+  outline: none;
+  border: solid 1px #cccccc;
+  border-radius: 5px;
+  font-size: 12pt;
+  padding-left: 0.5rem;
+  color: #252627;
+}
+
+#password {
+  margin-top: 0.5rem;
+}
+
+.forms a {
+  text-decoration: none;
+  color: #000;
+}
+.forms a:hover {
+  color: #505050;
+}
+.forms button {
+  background-color: #4b88a2;
+  color: #f2f2f2;
+  border: none;
+  height: 2.5rem;
+  width: 20rem;
+  margin-top: 0.5rem;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 14pt;
+  transition: 0.25s;
+}
+
+input:focus {
+  border: 2px solid #cccccc;
+}
+
+button:hover {
+  border-radius: 10px;
+  background-color: #00487f;
+  cursor: pointer;
+}
